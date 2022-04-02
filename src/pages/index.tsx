@@ -1,18 +1,18 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-
-const Home: NextPage = () => {
+import { Home } from "@components/Home"
+const App: NextPage = () => {
   return (
     <div>
       <Head>
         <title>hamx2</title>
         <meta name="description" content="Ham Ham Yap" />
       </Head>
-      <main>
-        <h1>Test</h1>
-      </main>
+      <div>
+        <Home />
+      </div>
     </div>
   )
 }
 
-export default Home
+export default App
